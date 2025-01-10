@@ -1,0 +1,15 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container form-container text-center">
+  {% if error %}
+  <h2 class="text-danger">❌ Erro: {{ error }}</h2>
+  {% else %}
+  <h2 class="text-success">✅ Resultado da Conversão</h2>
+  <p>
+    <strong>{{ amount }}</strong> {{ from_currency }} =
+    <strong>{{ result }}</strong> {{ to_currency }}
+  </p>
+  <p>Taxa de câmbio: <strong>{{ rate }}</strong></p>
+  {% endif %}
+  <a href="/" class="btn btn-secondary mt-3"> ← Voltar </a>
+</div>
+{% endblock %}

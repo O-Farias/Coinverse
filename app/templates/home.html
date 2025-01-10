@@ -1,0 +1,43 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container form-container text-center">
+  <form action="/convert" method="POST" class="mt-4">
+    <h2>Conversor de Moedas</h2>
+    <div class="mb-3">
+      <label for="from_currency" class="form-label">Moeda de origem:</label>
+      <input
+        type="text"
+        class="form-control"
+        id="from_currency"
+        name="from_currency"
+        placeholder="ex: USD"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label for="to_currency" class="form-label">Moeda de destino:</label>
+      <input
+        type="text"
+        class="form-control"
+        id="to_currency"
+        name="to_currency"
+        placeholder="ex: BRL"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label for="amount" class="form-label">Valor:</label>
+      <input
+        type="number"
+        class="form-control"
+        id="amount"
+        name="amount"
+        placeholder="ex: 100"
+        required
+      />
+    </div>
+    <button type="submit" class="btn btn-convert btn-block w-100">
+      CONVERTER
+    </button>
+  </form>
+</div>
+{% endblock %}
