@@ -18,7 +18,7 @@ Coinverse é uma aplicação web simples e elegante para conversão de moedas em
 ### **1. Clone o Repositório**
 
 ```bash
-git clone https://github.com/seu-usuario/coinverse.git
+git clone https://github.com/O-Farias/coinverse.git
 cd coinverse
 ```
 
